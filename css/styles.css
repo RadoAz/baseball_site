@@ -37,7 +37,7 @@ body {
   width: 100%;
   background: url(../images/background-main1.jpg) no-repeat;
   background-position: top center;
-  background-size: 104%;
+  background-size: cover;
 }
 
 a {
@@ -105,10 +105,14 @@ header {
   float: left;
 }
 
+banner {
+  overflow: hidden; 
+}
+
                                         /*main STYLES*/
  main {
   width: 980px;
-  height: 904px;
+  overflow: hidden;
   background-color: #ffffff;
   margin: auto;
   margin-top: 54px;
@@ -121,10 +125,14 @@ header {
 .img_right {
   float: left; 
 }
+
+.maincontent {
+  overflow: hidden;
+  position: relative;
+}
                                  /*ARTICLE STYLES*/
 article {
   width: 690px;
-  height: 644px;
   float: left;
 }
 
@@ -138,12 +146,14 @@ article p {
                                   /*ASIDE STYLES*/
 aside {
   width: 289px;
-  height: 644px;
   background-color: #f9f9f9;
   float: left;
   border-left: 1px solid #f0f0f0;
   box-sizing: border-box;
   padding: 40px 40px 0 40px;
+  position: absolute;
+  right: 0;
+  height: 100%;
 }
 
 .loginline {
@@ -240,6 +250,10 @@ aside p {
 
 .button_current, .button_invited {
   height: 48px;
+}
+
+.button_invited {
+  margin-bottom: 89px; 
 }
 
 .b_c p, .b_i p {
