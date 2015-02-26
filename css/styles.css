@@ -50,8 +50,6 @@ h1 {
   font-family: 'Open_Sans_Bold', Verdana, Arial;
   font-size: 23px;
   color: #011c41;
-  margin-top: 40px;
-  margin-left: 40px;
 }
 
 h2 {
@@ -120,10 +118,14 @@ banner {
 
 .img_left {
   float: left;
+  width: 300px;
+  height: 260px;
 }
 
 .img_right {
   float: left; 
+  width: 680px;
+  height: 260px;
 }
 
 .maincontent {
@@ -133,27 +135,27 @@ banner {
                                  /*ARTICLE STYLES*/
 article {
   width: 690px;
-  float: left;
   min-height: 715px;
+  padding: 40px;
+  box-sizing: border-box;
 }
 
 article p {
   font-family: 'Open_Sans_Light', Verdana, Arial;
   font-size: 14px;
   margin-top: 34px;
-  margin-left: 40px;
-  width: 607px;
 }
                                   /*ASIDE STYLES*/
 aside {
   width: 289px;
   background-color: #f9f9f9;
-  float: left;
   border-left: 1px solid #f0f0f0;
   box-sizing: border-box;
   padding: 40px 40px 0 40px;
   position: absolute;
   right: 0;
+  top: 0;
+  bottom: 0;
   height: 100%;
 }
 
@@ -166,7 +168,7 @@ aside {
 }
 
 .login_button {
-  width: 210px;
+  width: 100%;
   height: 36px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -191,7 +193,7 @@ aside p {
 }
 
 .login_input, .password_input {
-  width: 210px;
+  width: 100%;
   height: 38px;
   border: 1px solid #cbcbcb;
   -webkit-border-radius: 4px;
@@ -223,19 +225,18 @@ aside p {
 
 .regline {
   overflow: hidden;
+  margin-top: 50px
 }
 
 .reg_icon {
   float: left;
-  margin-top: 50px;
 }
 
 .regbox h2 {
-  margin-top: 49px;
 }
 
 .button_potential, .button_current, .button_invited {
-  width: 210px;
+  width: 100%;
   height: 36px;
   margin-bottom: 8px;
   border: 1px solid #d0d0d0;
@@ -261,7 +262,7 @@ aside p {
   margin-bottom: 89px; 
 }
 
-.littlegrey {
+small {
   text-align: left;
   font-size: 11px;
   margin: 0;
@@ -286,11 +287,15 @@ footer {
 
 .footleft {
   float: left;
+  width: 90px;
+  height: 90px;
 }
 
 .footright {
   float: left;
   margin-left: 30px;
+  width: 90px;
+  height: 90px;
 }
 
 footer p {
@@ -306,26 +311,38 @@ footer p {
   clear: both; 
 }
 
-.footer_left_text, .footer_right_text {
-  position: absolute; 
+.footer_left_text, footer ul { 
   font-size: 12px;
   font-family: 'Open_Sans', Verdana, Arial;
-  bottom: 17px;
+  margin-top: 35px;
 }
 
 .footer_left_text {
   float: left; 
   color: #8f8f8f;
-  z-index: 1;
 }
 
 .footer_right_text {
   float: right;
   color: #8f8f8f;
-  z-index: 2;
-  right: 40px;
 }
 
+footer ul {
+  list-style-type: none; 
+  float: right;
+}
 
+footer li {
+  float: left; 
+}
+
+footer li:after {
+  content: "|";
+  margin: 0 5px;
+}
+
+footer li:last-child:after {
+  content: ""; 
+}
 
 
